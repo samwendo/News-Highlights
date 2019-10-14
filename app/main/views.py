@@ -8,7 +8,7 @@ def index():
     view root page function that reterns index
     '''
 
-    top_headline = get_news("top-headlines")
+    top_headlin = get_news("top-headlin")
 
     title = "News headlines"
 
@@ -20,7 +20,7 @@ def index():
     if search_sources:
         return redirect(url_for(".sources",sources_name= search_sources ) )
 
-    return render_template("index.html", title = title, top=top_headline)
+    return render_template("index.html", title = title, top= top_headline )
 
 @main.route("/search/<news_name>")
 def search(news_name):
