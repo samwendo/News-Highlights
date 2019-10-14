@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mallanna' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet">
+
+    {% if title %}
+
+    <title> {{ title }}</title>
+
+    {% else %}
+
+    <title>WELCOME TO YOUR NEWS HIGHLITS</title>
+
+    {% endif %}
+
+</head>
+
+<body>
+
+    {% if title  %}
+    {% extends 'base.html' %}
+
+    {% import 'macros.html' as macro %}
+
+    {% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+
+    {% endblock %}
+
+    {% block content%}
+    <div class="container">
+        {{ macro.dispalyNewsList(top) }}
+    </div>
+    {% endblock %}
+
+</body>
+
+</html>
