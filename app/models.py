@@ -1,9 +1,10 @@
 class News:
     '''
-    News class to  define object
+    News class to define News Objects
     '''
+
     def __init__(self, author, title, description, url, urlToImage, content):
-        self.author = author 
+        self.author = author
         self.title = title
         self.description = description
         self.url = url
@@ -12,9 +13,8 @@ class News:
 
 class Sources:
     '''
-    Sources class to define object
+    Sources class to define Sources objects
     '''
-
     def __init__(self, id, name, description, url, category):
         self.id = id
         self.name = name
