@@ -1,5 +1,6 @@
 {% macro dispalyNewsList(news_list) %}
 {% for new in news_list %}
+<div class="love">
 <div class="row featurette">
     <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">
@@ -14,6 +15,6 @@
     </div>
 </div>
 <hr class="featurette-divider">
-
+</div>
 {% endfor %}
 {% endmacro %}

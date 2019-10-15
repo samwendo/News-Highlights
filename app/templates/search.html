@@ -2,6 +2,7 @@
 {% import 'macros.html' as macros.html %}
 
 {% block content %}
+<div class="love">
 <div class="container">
    <h3 class="text-center"> Found {{ news | count }} matches </h3>
     <hr><br><br><br>
@@ -9,5 +10,5 @@
     {{ macro.desplayNewsList(news) }}
 
 </div>
-
+</div>
 {% endblock %}
