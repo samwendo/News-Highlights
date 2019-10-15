@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
 
     {% if title %}
 
@@ -12,35 +13,34 @@
 
     {% else %}
 
-    <title> Welcome to the best Movie Review website </title>
+    <title> NEWS HEMLINES </title>
 
     {% endif %}
 
 </head>
 
-<body>
-<div>
+<body style="background-image:url(https://css-tricks.com/wp-content/uploads/2017/09/linear-gradient.png);">
+
     {% extends 'base.html' %}
 
     {% import 'macros.html' as macro %}
 
     <!-- Content Block-->
     {% block content%}
-    <div class="container">
+    <div class="container" >
 
-        <h3 class="text-center"> Top News Headline </h3>
-
-
+        <h3 class="text-center" style="background-color: #c2b280;"> <strong> Top News Headline </strong> </h3>
+    
         {{ macro.dispalyNewsList(top) }}
+    
        <hr style="size: 10px;">
-
+    
     </div>
 
 
 
     {% endblock %}
 
-</div>
 </body>
 
 </html>
