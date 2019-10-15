@@ -1,4 +1,3 @@
-export NEWS_API_KEY="193290aa71514bc8998e9b6a2650fb20"
-export SECRET_KEY="6504"
+export NEWS_API_KEY='7ce9e0d51c1f43199e632e877668be4b'
 
 python3.6 manage.py server
