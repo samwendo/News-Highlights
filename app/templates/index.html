@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     {% if title %}
 
     <title> {{ title}}</title>
 
     {% else %}
 
-    <title> NEWS HEMLINES </title>
+    <title> News Headline </title>
 
     {% endif %}
 
 </head>
 
-<body style="background-image:url(https://css-tricks.com/wp-content/uploads/2017/09/linear-gradient.png);">
+<body style="background-color: rgb(0, 0, 0);">
 
     {% extends 'base.html' %}
 
@@ -27,15 +27,17 @@
 
     <!-- Content Block-->
     {% block content%}
-    <div class="container" >
+    <div class="container">
+        <div class="jumbotron">
 
-        <h3 class="text-center" style="background-color: #c2b280;"> <strong> Top News Headline </strong> </h3>
-    
-        {{ macro.dispalyNewsList(top) }}
-    
-       <hr style="size: 10px;">
-    
+            <h3 class="text-center" style="background-color: #c2b280;"> <strong> Top News Headline </strong> </h3>
+
+            {{ macro.dispalyNewsList(top) }}
+        </div>
+
     </div>
+
+   </div>
 
 
 

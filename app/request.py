@@ -15,7 +15,7 @@ def configure_request(app):
     global api_key, base_url
     api_key = app.config["NEWS_API_KEY"]
     base_url = app.config["NEWS_API_BASE_URL"]
-
+    articles_url = app.config['ARTICLES_BASE_URL']
 
 def get_news(category):
     '''
@@ -118,3 +118,22 @@ def process_sources(sources_list):
             sources_results.append(sources_object)
 
             return sources_results
+def process_articles(articles_list):
+    '''
+    '''
+    articles_object = []
+    for article_item in articles_list:
+        id = article_item.get('id')
+        author = article_item.get('author')
+        title = article_item.get('title')
+        description = article_item.get('description')
+        url = article_item.get('url')
+        image = article_item.get('urlToImage')
+        date = article_item.get('publishedAt')
+
+        if image:
+            articles_result = Articles(
+                id, author, title, description, url, image, date)
+            articles_object.append(articles_result)
+
+    return articles_object

@@ -23,7 +23,7 @@ def index():
     return render_template("index.html", title=title, top=top_headlines)
 
 
-@main.route("/search/<news_name>")
+@main.route("/search/news_name")
 def search(news_name):
     '''
     View function to display the search results
@@ -37,7 +37,7 @@ def search(news_name):
 
 
 @main.route("/sources")
-def sources():
+def sources(sources):
     '''
     View function to display sources of news
     '''

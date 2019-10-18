@@ -1,47 +1,72 @@
-# News Highlites
-
-## This is an application that uses an API to gather data and display it on the webpage
+# News Highlights
 
 ## AUTHOR
 
-  SAM WENDO
+SAM WENDO
 
 ## Description
 
-    This web application is built using Python framework known as Flask. The app displays information about news from most popular sources, top headlines in the World.
+This is an application that will help list and preview news articles from various sources.
 
-## setup /Installation Requirements
+## Deployed website
 
-* First clone the repo
-   . $ git clone,
+This app is live @
 
-* After cloning, navigate to the project:
-    . $ cd NEWS-HIGHLITS
+## How it works
 
-* Make the file executable:
-   . $ chmod +x start.sh
+As a user can ;
 
-* Run the application:
-   . $ ./start.sh
+* see various news sources on the homepage of the application.
+* select a news source and see all news articles from the selected news source in the application.
+* see the image.
+* click on an article and read the full article on the source website.
 
-* Now navigate to your browser at
+## Installation
 
-  . localhost 5000/
+Installation for the package can be done via pip:
+bash
+
+$ python -m pip install newsapi-python
+
+## Usage
+
+After installation, import the client class into your project:
+python
+from newsapi import NewsApiClient
+Initialize the client with your API key:
+python
+api = NewsApiClient(api_key='----')
+
+## Setup/Installation Requirements
+
+Want to contribute?
+
+To fix a bug or enhance an existing module, follow these steps:
+
+* Fork the repo
+* Create a new branch (git checkout -b improve-feature)
+* Make the appropriate changes in the files
+* Add changes to reflect the changes made
+* Commit your changes (git commit -am 'Improve feature')
+* Push to the branch (git push origin improve-feature)
+* Create a Pull Request
+
+## Known Bugs
+
+No known bugs.
 
 ## Technologies Used
 
-*Python
-*Jquery
-*Flask
-*HTML
-*Bootstrap
+* Bootstrap
+* Flask framework that is a Python microframework.
+* python3.6
+* Bootstrap
 
-## CONTACT
+## Support and contact details
 
- wendosam21@gmail.com
+EMAIL ME @ wendosam21@gmail.com
 
-## License
+### License
 
-MIT LICENSE
-
-Copyright (c) 2019 **SAM WENDO**
+[MITlicense](LICENSE) 2019 **SAM WENDO**
+LICENSE.txt

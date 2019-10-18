@@ -6,6 +6,7 @@ class Config:
     '''
 
     NEWS_API_BASE_URL = "https://newsapi.org/v2/{}?country=us&apiKey={}"
+    ARTICLES_BASE_URL = 'https://newsapi.org/v2/everything?language=en&sources={}&apiKey={}'
 
     NEWS_API_KEY = '7ce9e0d51c1f43199e632e877668be4b'
 
